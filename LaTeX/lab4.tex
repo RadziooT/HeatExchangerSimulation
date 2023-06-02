@@ -1,0 +1,109 @@
+\documentclass[12pt,titlepage]{article}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={210mm,297mm},
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm,
+}
+
+% Polski
+\usepackage[]{polski} 
+\usepackage[polish]{babel}
+
+% Pierwszy akapit - wcięty
+\usepackage[]{indentfirst}
+
+% Matematyka
+\usepackage[]{amsfonts}
+\usepackage[]{amsmath}
+
+% Formatowanie
+\usepackage{ragged2e}
+
+% Tytuły sekcji
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\bfseries}{}{1em}{}
+
+% <=
+\usepackage{amssymb}
+
+% eps
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+% Tabele
+\usepackage{array}
+\usepackage{makecell}
+
+\usepackage[style=czech]{csquotes}
+
+\renewcommand*{\thesubsubsection}{}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage[numbered]{matlab-prettifier}
+\lstset{
+    literate={ą}{{\k{a}}}1
+    {Ą}{{\k{A}}}1
+    {ę}{{\k{e}}}1
+    {Ę}{{\k{E}}}1
+    {ó}{{\'o}}1
+    {Ó}{{\'O}}1
+    {ś}{{\'s}}1
+    {Ś}{{\'S}}1
+    {ł}{{\l{}}}1
+    {Ł}{{\L{}}}1
+    {ż}{{\.z}}1
+    {Ż}{{\.Z}}1
+    {ź}{{\'z}}1
+    {Ź}{{\'Z}}1
+    {ć}{{\'c}}1
+    {Ć}{{\'C}}1
+    {ń}{{\'n}}1
+    {Ń}{{\'N}}1
+}
+
+\title{
+\includegraphics[scale=0.75]{img/politechnika_sl_logo_bw_poziom_pl.eps}\\
+\textbf{Wydział Automatyki, Elektroniki\\
+i Informatyki}\\
+\vspace*{1cm}
+Symulacja Układów Sterowania \\Sterowanie układem cieplnym}
+\author{Radosław Tchórzewski\\
+Jakub Kula\\
+Arkadiusz Prokopowicz} 
+\date{Gliwice 2023}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\vspace{1cm}
+
+\listoffigures
+
+\vspace{1cm}
+
+\listoftables
+
+\newpage
+
+\section{Opis modelowane obiektu}
+\section{Model obiektu}
+\section{Wizualizacja}
+\section{Walidacja modelu}
+\section{Wnioski}
+\end{document}
